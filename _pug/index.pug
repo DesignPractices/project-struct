@@ -8,6 +8,36 @@ html(lang="en-US")
         title Welcome to Project Setup
         link(rel="stylesheet", href="styles/main.css")
     body
+        header Welcome to oneandzero Project Setup
         .container
-            span.heading This is a simple project setup including the gulp task runner
-            span.code git clone https://github.com/DesignPractices/project-struct.git
+            .description This is a simple prject setup including gulp task runner for rookie web desingers
+            .cta
+                a(href="https://github.com/DesignPractices/project-struct" alt="link broken" target="_blank") Github &#11166;
+                span.link_desc Goto github repository
+            .git_cmd
+                span.code git clone https://github.com/DesignPractices/project-struct.git
+                span.link_desc Clone github repository
+
+            .dir_structure
+                span.link_desc Directory Structure
+                .root_dir Project Root Directory
+                    ul.sub_dir_list
+                        li.list_item.dir &#10687; _pug
+                            ul.sub_dir_list
+                                li.file.list_item &#10958; index.pug
+                        li.list_item.dir &#10687; _sass
+                            ul.sub_dir_list
+                                li.list_item.dir &#10687; _base
+                                li.list_item.dir &#10687; _layouts
+                                li.list_item.dir &#10687; _sections
+                                li.list_item.file &#10958; main.sass
+                        li.list_item.dir &#10687; _scripts
+                            ul.sub_dir_list
+                                li.file.list_item &#10958; app.js
+                        li.list_item.dir &#10687; assets
+                        li.list_item.dir &#10687; styles
+                            ul.sub_dir_list
+                                li.file.list_item &#10958; main.css
+                        li.list_item.dir &#10687; scripts
+                        li.list_item.file &#10958; gulpfile.js
+                        li.list_item.file &#10958; index.html
